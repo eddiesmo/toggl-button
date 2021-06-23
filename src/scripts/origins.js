@@ -8,6 +8,11 @@ export default {
     url: '*://airtable.com/*',
     name: 'Airtable'
   },
+  'app.amazingmarvin.com': {
+    url: '*://app.amazingmarvin.com/*',
+    name: 'AmazingMarvin',
+    file: 'amazing-marvin.js'
+  },
   'any.do': {
     url: '*://*.any.do/*',
     name: 'Anydo'
