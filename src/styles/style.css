@@ -460,6 +460,10 @@ a.toggl-button.toggl-plan {
   font-weight: initial;
 }
 
+.toggl-button.zendesk--2021:not(.toggl-button-edit-form-button) {
+  margin: 10px 10px 0 0;
+}
+
 [data-test-id="customer-context-tab-navigation"] .toggl-button.toggl-button.zendesk-agent-ws {
   margin-left: 10px;
   margin-top: 2px;
@@ -1183,10 +1187,8 @@ a.toggl-button.workfront.min {
 
 /********* INTERCOM *********/
 .toggl-button.intercom {
-  float: right;
-  text-decoration: none;
-  margin-top: 6px;
-  margin-right: 5px;
+  margin-top: 3px;
+  margin-left: 10px;
 }
 
 /********* PROCESSWIRE *********/

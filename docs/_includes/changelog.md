@@ -1,3 +1,39 @@
+## [1.70.7](https://github.com/toggl/toggl-button/compare/1.70.6...1.70.7) (2021-09-28)
+
+
+### Bug Fixes
+
+* **idb:** Fix IDB initialization ([#2013](https://github.com/toggl/toggl-button/issues/2013)) ([9d5cdf1](https://github.com/toggl/toggl-button/commit/9d5cdf178cb3f062023edf57034fc0a5b3df2cb0)), closes [#2004](https://github.com/toggl/toggl-button/issues/2004)
+
+## [1.70.6](https://github.com/toggl/toggl-button/compare/1.70.5...1.70.6) (2021-09-17)
+
+
+### Bug Fixes
+
+* **to-do:** Fix project selector for MS To-Do ([#2001](https://github.com/toggl/toggl-button/issues/2001)) ([6c9b288](https://github.com/toggl/toggl-button/commit/6c9b288da974867da2b5b12a20bb632822515331)), closes [#1976](https://github.com/toggl/toggl-button/issues/1976)
+
+## [1.70.5](https://github.com/toggl/toggl-button/compare/1.70.4...1.70.5) (2021-09-06)
+
+
+### Bug Fixes
+
+* **asana:** Prevent multiple buttons on board view ([c21df5f](https://github.com/toggl/toggl-button/commit/c21df5f6175b38023b14454e3a1f6c3b60657151)), closes [#1958](https://github.com/toggl/toggl-button/issues/1958)
+
+## [1.70.4](https://github.com/toggl/toggl-button/compare/1.70.3...1.70.4) (2021-08-10)
+
+
+### Bug Fixes
+
+* **zendesk:** Restore previous Zendesk integrations ([#1994](https://github.com/toggl/toggl-button/issues/1994)) ([cf68456](https://github.com/toggl/toggl-button/commit/cf68456b9aef8784dc0b306541d7ac5b0f50025a)), closes [#1992](https://github.com/toggl/toggl-button/issues/1992)
+
+## [1.70.3](https://github.com/toggl/toggl-button/compare/1.70.2...1.70.3) (2021-07-28)
+
+
+### Bug Fixes
+
+* **intercom:** Handle Intercom in 2021 ([#1977](https://github.com/toggl/toggl-button/issues/1977)) ([5dfa113](https://github.com/toggl/toggl-button/commit/5dfa1132f4c5c8a565b739f766e6c59b9344418c))
+* **zendesk:** Add support for new Zendesk UI ([#1985](https://github.com/toggl/toggl-button/issues/1985)) ([b8c2f3f](https://github.com/toggl/toggl-button/commit/b8c2f3febafefde75d3bc9dca792b088586488df)), closes [#1979](https://github.com/toggl/toggl-button/issues/1979)
+
 ## [1.70.2](https://github.com/toggl/toggl-button/compare/1.70.1...1.70.2) (2021-05-20)
 
 
