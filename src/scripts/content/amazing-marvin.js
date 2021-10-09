@@ -22,7 +22,7 @@ togglbutton.render('.Task:not(.toggl)', { observe: true }, function (
     className: 'amazing-marvin-task',
     buttonType: 'minimal',
     description: titleElem.textContent.replace('\n', ' - ') + amazingMarvinProjectText,
-    projectName: amazingMarvinFolderName + ' - General' // Doesn't work
+    projectName: amazingMarvinFolderName
   });
 
   container.appendChild(link);
@@ -48,7 +48,7 @@ togglbutton.render('.' + projContainerClassId + ':not(.toggl)', { observe: true 
     className: 'amazing-marvin-project',
     buttonType: 'minimal',
     description: titleElem.textContent.replace('\n', ' - '),
-    projectName: amazingMarvinFolderName + ' - General' // Doesn't work
+    projectName: amazingMarvinFolderName
   });
 
   container.appendChild(link);
@@ -66,13 +66,13 @@ togglbutton.render('.Subtask:not(.toggl)', { observe: true }, function (
   // Find title of current task
   const titleElem = $('.' + titleElementClassId, elem);
 
-  const amazingMarvinParemtTaskName = getParentTaskText(elem);
+  const amazingMarvinParentTaskName = getParentTaskText(elem);
 
   const link = togglbutton.createTimerLink({
     className: 'amazing-marvin-subtask',
     buttonType: 'minimal',
-    description: titleElem.textContent.replace('\n', ' - ') + amazingMarvinParemtTaskName,
-    projectName: amazingMarvinParemtTaskName // Doesn't work
+    description: titleElem.textContent.replace('\n', ' - ') + amazingMarvinParentTaskName,
+    projectName: amazingMarvinParentTaskName // Doesn't work
   });
 
   container.appendChild(link);
@@ -105,7 +105,7 @@ function getProjectText (elem) {
 }
 
 function getParentTaskText (elem) {
-  // Given a subtask, tet the text description of the parent task
+  // Given a subtask, get the text description of the parent task
   const maybeParentTaskContainer = elem.parentElement.parentElement.parentElement.parentElement;
 
   if (maybeParentTaskContainer.className.includes('Task')) {
