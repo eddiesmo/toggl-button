@@ -3,6 +3,7 @@
 const titleElementClassId = '_17n7RKYrt-SlXX0V1Knv49';
 const hoverButtonsContainerId = '_2SYo_FEWZYB9c-IM_6XJO7';
 const projContainerClassId = '_3EenhmTvpkLi4AUdT7a_-_';
+const projectPathClassId = 'OGEWdnwG6XphVvWjMdw0t';
 
 // Add toggl button for Amazing Marvin tasks
 togglbutton.render('.Task:not(.toggl)', { observe: true }, function (
@@ -89,7 +90,12 @@ function extractTextFromFolderElement (projectContainingElem) {
   const longText = projectContainingElem.getAttribute('data-lhover3') ||
    projectContainingElem.getAttribute('data-hov');
   const seperator = ' ' + String.fromCharCode(0x203a);
-  return longText.split(seperator)[0];
+  if (longText.includes(seperator)) {
+    return longText.split(seperator)[0];
+  } else {
+    const folderTextElem = $('.' + projectPathClassId, projectContainingElem);
+    return folderTextElem.textContent.substring(1);
+  }
 }
 
 function getProjectText (elem) {
